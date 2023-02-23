@@ -54,6 +54,7 @@ a{
 .qr-text::placeholder{
     color: #fff;
     font-family: poppins;
+    font-size: 12pt;
 }
 
 .qr-text:hover{
@@ -115,6 +116,9 @@ a{
 .share-btn{
     margin-left: 0.7rem;
    color: #fff;
+   font-family: poppins;
+   font-size: 1.1rem;
+    font-weight: 500;
 }
 
 .action-container{
