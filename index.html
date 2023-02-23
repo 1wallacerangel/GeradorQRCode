@@ -4,14 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
     <link rel="stylesheet" href="style.css">
     <title>QRCode</title>
 </head>
 <body>
     <section>
         <div class="row">
-            <input type="color" class="light" value="#ffffff">
-            <input type="color" class="dark">
+            <div class="colors">
+                <input type="hidden" class="light" value="#ffffff">
+                <input type="hidden" class="dark">
+            </div>
             <select class="sizes">
                 <option value="100">100×100</option>
                 <option value="200">200×200</option>
@@ -28,18 +31,19 @@
         <input type="text" class="qr-text" placeholder="Digite o Texto QR">
         <div id="qr-code"></div>
         <div class="action-container">
+    
             <a href="#" class="download btn" download="QRCode">
                 <span>Download</span>
-                <img src="download.svg" alt="">
                 <i class="fa-solid fa-arrow-down"></i>
             </a>
             <button class="btn share-btn">
                 <span>Share</span>
-                <img src="share.svg" alt="">
+                <i class="fa-solid fa-arrow-up-from-bracket"></i>     
             </button>
-        </div>
+        </div>    
+              
     </section>
-    
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
     <script src="script.js"></script>
 </body>

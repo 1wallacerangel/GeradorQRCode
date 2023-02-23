@@ -12,11 +12,11 @@ qrText.addEventListener("input", handleQRText);
 sizes.addEventListener("change", handleSize);
 shareBtn.addEventListener("click", handleShare);
 
-const defaultUrl = "https://youtube.com/@AsmrProg";
+const defaultUrl = "hhttps://github.com/1wallacerangel";
 let colorLight = "#fff",
     colorDark = "#000",
     text = defaultUrl,
-    size = 300;
+    size = 450;
 
 function handleDarkColor(e) {
     colorDark = e.target.value;
@@ -62,7 +62,7 @@ async function handleShare() {
                 title: text,
             });
         } catch (error) {
-            alert("Your browser doesn't support sharing.");
+            alert("Seu Navegador Não Suporta o Compratihamento.");
         }
     }, 100);
 }

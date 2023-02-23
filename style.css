@@ -1,10 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
 *{
     box-sizing: border-box;
 }
 
 body{ 
-    background: #1c1e26;
-    font-family: sans-serif;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+    font-family: poppins;
     max-width: 500px;
     height: 100vh;
     margin: 0 auto;
@@ -16,9 +20,8 @@ body{
 
 input[type="color"]{
     border: none;
-    width: 32.5%;
+    width: 100%;
     height: 40px;
-    border-radius: 3px;
 }
 
 input[type="color"]::-webkit-color-swatch-wrapper{
@@ -36,18 +39,26 @@ a{
 .qr-text{
     padding: 1rem;
     display: block;
-    background: #181b29;
-    border: 1px solid #414866;
-    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(30px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
     width: 100%;
     margin: 0.5rem 0 1rem 0;
     color: #fff;
     outline: none;
+    box-shadow: 0 0 80px rgba(0, 0, 0, 0.2);
+    transition: all 0.5s;
 }
 
 .qr-text::placeholder{
-    color: #8b92b7;
-    font-weight: 500;
+    color: #fff;
+    font-family: poppins;
+}
+
+.qr-text:hover{
+    background: rgba(255, 255, 255, 0.4);
+    transition: all 0.5s;
 }
 
 #qr-code{
@@ -56,7 +67,11 @@ a{
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid #414866;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(30px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 0 80px rgba(0, 0, 0, 0.2);
 }
 
 #qr-code img, #qr-code canvas{
@@ -64,29 +79,17 @@ a{
     max-height: 100% !important;
 }
 
-.row{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
 .sizes{
-    width: 32.5%;
-    height: 40px;
-    color: #fff;
-    background: #181b29;
-    border: 1px solid #414866;
-    border-radius: 4px;
-    outline: none;
+    display: none;
 }
 
 .btn{
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(30px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
     color: #fff;
-    max-width: 200px;
     padding: 14px;
-    background: rgb(106, 43, 255);
-    border-radius: 4px;
-    border: none;
+    border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -94,15 +97,24 @@ a{
     font-size: 1.1rem;
     font-weight: 500;
     flex: 1;
+    box-shadow: 0 0 80px rgba(0, 0, 0, 0.2);
+    transition: all 0.5s;
 }
 
-.btn img{
+.btn:hover{
+    background: rgba(255, 255, 255, 0.4);
+    transition: all 0.5s;
+}
+
+.btn i{
     width: 20px;
     margin-left: 10px;
+    color: #fff;
 }
 
 .share-btn{
     margin-left: 0.7rem;
+   color: #fff;
 }
 
 .action-container{
@@ -136,4 +148,16 @@ a{
         margin-left: 0;
         margin-top: 0.7rem;
     }
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
