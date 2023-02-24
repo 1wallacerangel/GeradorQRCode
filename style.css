@@ -91,7 +91,7 @@ a{
     backdrop-filter: blur(30px);
     border: 2px solid rgba(255, 255, 255, 0.1);
     color: #fff;
-    padding: 15px;
+    padding: 10px;
     border-radius: 10px;
     display: flex;
     align-items: center;
