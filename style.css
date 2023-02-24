@@ -145,9 +145,7 @@ a{
         min-width: unset;
         padding: 10px;
     }
-    .share-btn{
-        padding: 20px;
-    }
+    
 }
 
 @media (max-width: 350px){
