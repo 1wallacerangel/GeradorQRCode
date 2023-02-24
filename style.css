@@ -46,6 +46,8 @@ a{
     width: 100%;
     margin: 0.5rem 0 1rem 0;
     color: #fff;
+    font-family: poppins;
+    font-size: 12pt;
     outline: none;
     box-shadow: 0 0 80px rgba(0, 0, 0, 0.2);
     transition: all 0.5s;
@@ -89,7 +91,7 @@ a{
     backdrop-filter: blur(30px);
     border: 2px solid rgba(255, 255, 255, 0.1);
     color: #fff;
-    padding: 14px;
+    padding: 15px;
     border-radius: 10px;
     display: flex;
     align-items: center;
@@ -141,6 +143,7 @@ a{
     }
     .btn{
         min-width: unset;
+        padding: 10px;
     }
 }
 
